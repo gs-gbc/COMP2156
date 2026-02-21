@@ -6,8 +6,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\"",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://gs-gbc.github.io/comp2156",
   "bugs": {
     "url": "https://github.com/gs-gbc/COMP2156/issues"
   },
@@ -45,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-    }
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
